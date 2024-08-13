@@ -1,0 +1,141 @@
+.hero-section {
+    background: linear-gradient(40deg, #cea836, $black, $black, #cea836);
+}
+
+.banner {
+    display: grid;
+    gap: 1rem;
+    @mixin atMedium {
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+    }
+    /*background: url('./assets/images/111.jpg') no-repeat center;
+    background-size: cover;    
+    height: 85vh;*/
+    &__desc {
+        display: flex;
+        justify-content: flex-start;
+        @mixin atMedium {
+            justify-content: center;
+        }
+        align-items: flex-start;
+        flex-direction: column;
+        @mixin forSmall {
+            order: 1;
+        }
+
+        h1 {
+            margin-bottom: 1.2rem;
+            font-size: 2rem;
+            line-height: 1.4;
+            @mixin atMedium {
+                margin-bottom: 1.3rem;
+                font-size: 2.5rem;
+                line-height: 1.4;
+            }
+            @mixin textGradient;
+        }
+
+        p {
+            color: $white;
+            line-height: 1.6;
+        }
+    }
+
+    &__img {
+        display: flex;
+        justify-content: space-between;
+        /*align-items: center;*/
+        /*outline: 2px solid red;*/
+        gap: .7rem;
+        @mixin forSmall {
+            order: 2;
+        }
+
+        & > div {
+            /*flex-basis: 30ch;*/
+        }
+
+        &__one {
+            /*outline: 2px solid blue;*/
+            display: flex;
+            align-items: center;
+        }
+
+        &__two {
+            /*outline: 2px solid orange;*/
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: .7rem;
+
+            a {
+                text-align: center;
+            }
+        }
+    }
+}
+
+.hero {
+    display: grid;
+    @mixin atMedium {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    gap: 2rem;
+    place-items: center;
+    margin-block: 2rem;
+
+    &__item {
+        background: $black;
+        padding: 2rem;
+        height: 250px;
+
+        span {
+            @mixin textGradient;
+            align-self: center;
+            margin: auto;
+            padding-top: 1rem;
+        }
+
+        p {
+            margin-top: .8rem;
+            color: $white;
+        }
+    }
+}
+
+/*
+
+&__img {
+        display: flex;
+        justify-content: space-between;
+        /*align-items: center;*/
+        /*outline: 2px solid red;
+        gap: 1.5rem;
+        @mixin forSmall {
+            order: 1;
+        }
+
+        & > div {
+            /*flex-basis: 30ch;
+        }
+
+        &__one {
+            /*outline: 2px solid blue;
+            display: flex;
+        }
+
+        &__two {
+            /*outline: 2px solid orange;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 1.5rem;
+
+            a {
+                text-align: center;
+            }
+        }
+    }
+
+*/

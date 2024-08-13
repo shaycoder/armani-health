@@ -1,0 +1,45 @@
+.why-us-sec {
+    background: url('./assets/images/112.jpg') no-repeat center;
+    background-size: cover;
+
+    &__title {
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: bold;
+      margin-top: 1rem;
+      margin-bottom: 0;
+      @mixin atMedium {
+          font-size: 2.2rem;
+          margin: 1rem 0 1rem 0;
+      }
+      @mixin textGradient;
+  }
+}
+
+.why-us {
+  display: grid;
+  @mixin atMedium {
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+  }
+
+  &__desc {
+     @mixin forSmall {
+       /*margin-inline: 0;*/
+     }
+     
+  }
+
+  &__img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @mixin forSmall {
+          order: 1;
+      }
+  }
+
+  .fa-li {
+    @mixin textGradient;
+  }
+}

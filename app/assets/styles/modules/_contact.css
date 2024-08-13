@@ -1,0 +1,91 @@
+.contact-section {
+    /*background: url('./assets/images/111.jpg') no-repeat center;
+    background-size: cover;*/
+    background: linear-gradient(40deg, #cea836, $black, $black, #cea836);
+}
+
+.contact-parent {
+    display: grid;
+    @mixin atMedium {
+        grid-template-columns: 1fr 1fr;
+    }
+    gap: 3rem;
+}
+
+.contact__top {
+    @mixin atMedium {
+        border-right: 1px solid $lightgold;
+    }
+    
+    &__title {
+        @mixin textGradient;
+        font-size: 2rem;
+        margin-block-end: 1.5rem;
+        text-align: center;
+        @mixin atMedium {
+            font-size: 2.2rem;
+            text-align: left;
+        }
+    }
+
+    p {
+        color: $lightgrey;
+        margin-bottom: 1.5rem;
+        margin-inline: 1rem;
+        @mixin atMedium {
+            margin-inline: 3.125rem; 
+        }
+    }
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .contact-item {
+        display: flex;
+        flex-direction: column;
+        width: 70vw;
+        @mixin atMedium {
+            width: 40vw;
+        }
+        margin-bottom: 1rem;
+
+        label {
+            padding: .75rem 0;
+            font-size: 1rem;
+            font-weight: 500;
+            color: $lightgrey;
+            
+            @mixin atMedium {
+                font-size: 1.19rem;
+            }
+        }
+
+        &__input {
+            border: none;
+            outline: none;
+            padding: .70rem 1rem;
+            font-size: .95rem;
+
+            @mixin atMedium {
+                font-size: 1.1rem;
+                padding: .75rem 1.2rem;
+            }
+            border-radius: 5px;
+            
+        }
+
+        &__btn {
+            margin-top: 3rem;
+            align-self: center;
+            padding-block: .7rem;
+            color: $black !important;
+        }
+    }
+}
+
+
+

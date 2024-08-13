@@ -1,0 +1,77 @@
+.child-section {
+    /*background-color: $black;*/
+}
+
+.child-companies {
+    /*background-color: $black;
+    color: $white;*/
+    /*background: url('./assets/images/bg5.jpg') no-repeat center;
+    background-size: cover;*/
+    display: grid;
+    @mixin atMedium {
+        grid-template-columns: 1fr 1fr;
+        gap: .5rem;
+    }
+    @mixin atMedium {
+        margin-block: 5rem;
+    }
+
+    & > div {
+        margin-block: auto;
+        @mixin forSmall {
+            order: 2;
+        }
+
+        h2 {
+            text-align: left;
+            margin-left: 2rem;
+            @mixin atMedium {
+                margin-left: 5rem;
+            }
+            @mixin forSmall {
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    img {
+        @mixin forSmall {
+            order: 1;
+        }
+    }   
+
+    &__sec {
+        display: grid;
+        margin-inline: 2rem;
+        @mixin atMedium {
+            grid-template-columns: 1fr 2fr;
+            margin-inline: 5rem;
+        }
+        margin-block: auto;
+        div {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+
+            /*p {
+                color: $white;
+            }*/
+
+            .who-btn {
+                color: $black !important;
+                border: 1px solid $black;
+                @mixin forSmall {
+                    margin-bottom: 2rem;
+                }
+            }
+
+            a {
+                align-self: self-start;
+                @mixin forSmall {
+                    align-self: center;
+                }
+            }
+        }
+    }
+}

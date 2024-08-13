@@ -1,0 +1,47 @@
+.services {
+    /*background: url('./assets/images/111.jpg') no-repeat center;
+    background-size: cover;*/
+    background: linear-gradient(40deg, #cea836, $black, $black, #cea836);
+    color: $white;
+
+    &__title {
+        @mixin textGradient;
+        font-size: 2rem;
+        margin-block-end: 1rem;
+        text-align: center;
+        @mixin atMedium {
+            font-size: 2.2rem;
+            margin-block-end: 2rem;
+            text-align: left;
+        }
+    }
+
+    &__top-sec {
+        display: grid;
+        gap: 2rem;
+        padding: .5rem;
+        @mixin atMedium {
+            grid-template-columns: 1fr 1fr;
+            /*padding: 1.5rem;*/
+        }
+        
+        div > img {
+            @mixin atMedium {
+                padding-inline: 4rem;
+            }
+        }
+    }
+
+    h3 {
+        margin-top: 3rem;
+        margin-bottom: 1.2rem;
+        color: $gold;
+        @mixin forSmall {
+            font-size: 1.3rem;
+        }
+    }
+
+    p {
+        color: $white;
+    }
+}

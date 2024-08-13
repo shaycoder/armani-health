@@ -1,0 +1,21 @@
+.logo-section {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    @mixin atMedium {
+        justify-content: space-between;
+    }
+    /*background-color: $black;*/
+    background: url('./assets/images/bg2.jpg') no-repeat center;
+    background-size: cover;
+
+    img {
+        width: 150px;
+        height: auto;
+        padding: 1.5rem;
+    }
+}
+
+.centered {
+    justify-content: center;
+}
