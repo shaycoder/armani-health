@@ -1,11 +1,9 @@
 footer {
-    /*background-color: $black;*/
     background: url('./assets/images/bg2.jpg') no-repeat center;
     background-size: cover;
     padding-top: 1rem;
     @mixin atMedium {
         padding-top: 2rem;
-        padding-bottom: 1.5rem;
     }
 }
 

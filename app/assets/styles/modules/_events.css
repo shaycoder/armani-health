@@ -1,0 +1,49 @@
+.events {
+    background: linear-gradient(3deg, #cea836, $black, $black);
+    @mixin atMedium {
+        background: linear-gradient(40deg, #cea836, $black, $black, #cea836);
+    }
+    color: $white;
+    h1 {
+        @mixin textGradient;
+        font-size: 2rem;
+        text-align: center;
+        margin-block: 1rem;
+        @mixin atMedium {
+            margin-block: 3rem;
+        }
+    }
+
+    &__sec {
+        &--detail {
+            display: grid;
+            padding: 1rem;
+            gap: 1rem;
+            @mixin atMedium {
+                grid-template-columns: 1fr 2fr;
+                gap: 3rem;
+                padding: 2rem;
+            }
+            img {
+                width: 400px;
+                @mixin forSmall {
+                    order: 2;
+                }
+            }
+
+            h2 {
+                @mixin textGradient;
+                text-align: left;
+                margin-bottom: 1rem;
+                font-size: 1.6rem;
+            }
+
+            div {
+                p {
+                    color: $white;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}

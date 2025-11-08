@@ -5,14 +5,13 @@
     @mixin atMedium {
         justify-content: space-between;
     }
-    /*background-color: $black;*/
     background: url('./assets/images/bg2.jpg') no-repeat center;
     background-size: cover;
 
-    img {
-        width: 150px;
+    div {
+        width: 250px;
         height: auto;
-        padding: 1.5rem;
+        padding: 1rem;
     }
 }
 

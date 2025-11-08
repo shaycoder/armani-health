@@ -68,7 +68,7 @@
             ul {
                 flex-direction: column;
                 li {
-                    margin-bottom: 2.5rem;
+                    margin-block: 1rem;
                 }
             }
         }
